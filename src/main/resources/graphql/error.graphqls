@@ -1,0 +1,15 @@
+interface Error {
+    message: String!
+}
+
+type InputValidationError implements Error {
+    message: String!
+    validationType: String
+}
+
+type NotFoundError implements Error {
+    message: String!
+    resourceId: Int
+}
+
+union GraphQLError = InputValidationError | NotFoundError

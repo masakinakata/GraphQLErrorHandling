@@ -1,0 +1,13 @@
+type Query {
+    bookById(selectBookRequest: SelectBookRequest): SelectBookPayload
+    books: [SelectBookPayload]
+}
+
+input SelectBookRequest {
+    id: ID
+}
+
+type SelectBookPayload {
+    book: Book
+    errors: [GraphQLError]
+}
