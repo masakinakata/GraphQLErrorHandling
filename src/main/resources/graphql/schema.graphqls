@@ -4,10 +4,10 @@ type Query {
 }
 
 input SelectBookRequest {
-    id: ID
+    id: ID!
 }
 
 type SelectBookPayload {
-    book: Book
+    book: Book!
     errors: [GraphQLError]
 }

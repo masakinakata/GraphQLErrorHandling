@@ -15,7 +15,7 @@ public class GraphQLConfig {
             ClassNameTypeResolver classNameTypeResolver = new ClassNameTypeResolver();
             classNameTypeResolver.addMapping(CustomNotFoundGraphQLError.class, "NotFoundError");
             classNameTypeResolver.addMapping(CustomInputValidationGraphQLError.class, "InputValidationError");
-
+            
             builder.defaultTypeResolver(classNameTypeResolver);
         };
     }
