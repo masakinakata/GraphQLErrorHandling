@@ -10,7 +10,7 @@ Spring Boot for GraphQLが公式で出しているコードを変更・拡張す
 # 環境
 - JDK: OpenJDK 17
 - Spring Boot: 3.1.5
-- gradle: 8.4
+- Gradle: 8.4
 
 # 実行方法
 1. 以下のコマンドを実行
